@@ -2,7 +2,7 @@ We can add **background colo**r to text in flutter using **backgroundColor prope
 
 ```dart
 Text(
-  'Raj Sharma',
+  'Bhajarangh',
   style: TextStyle(
     backgroundColor: Colors.blue,
     fontSize: 20,
