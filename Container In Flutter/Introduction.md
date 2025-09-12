@@ -1,0 +1,2 @@
+- Container is a box like widget that can be shaped, colored and sized according to our needs.
+- its like you can add whatever color you want, you can mention an alignment (to the text inside of it) and also you can add padding and margin as well.
