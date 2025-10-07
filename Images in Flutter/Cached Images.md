@@ -1,0 +1,51 @@
+# Cached Images
+
+- The benefits of using cached images in your Flutter application are **Faster Loading Times, Less Network Usage and Improved User Experience.**
+
+## **How to Use Cached Images in Flutter ?**
+
+- To use the cached_network_image package, you need to add **cached_network_image** package
+- Open your terminal and go to your project directory and execute the following command:
+
+```dart
+flutter pub add cached_network_image
+```
+
+- **Import and Use the Package**
+
+```dart
+import 'package:cached_network_image/cached_network_image.dart';
+```
+
+Example: 
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
+class CachedImagess extends StatelessWidget {
+  const CachedImagess({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: Center(
+          child: CachedNetworkImage(
+            imageUrl: 'data:image/png;base64,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',
+            placeholder: (context, url) => CircularProgressIndicator(),
+            errorWidget: (context, url, error) => Icon(Icons.error),  // if given url is wrong then it shows error icon.
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+From above code,
+
+- **imageUrl** is the URL of the image you want to cache.
+- **placeholder** is a widget displayed while the image is loading.
+- **errorWidget** is displayed in case of any loading error.
