@@ -1,15 +1,15 @@
-## **Drawer in Flutter**
+### **Drawer From Right**
 
-**Drawer** is a sidebar that appears from the side of the screen.
+- If we want to make Drawer appear from the right side, you can use **endDrawer** property of Scaffold widget.
 
-- Scaffold widget provides a **drawer** property to add a drawer
-
-Syntax:
+Syntax - 
 
 ```dart
 Scaffold(
-  drawer: Drawer(
+  endDrawer: Drawer(
     // code here
   ),
 )
 ```
+
+**`DrawerHeader`** - It Is a component used within the `Drawer` widget , which helps to position content at the top of the drawer area.
